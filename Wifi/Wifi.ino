@@ -1,7 +1,7 @@
 #include <WiFi.h>
 
-const String SSID = "Paulo";
-const String PSWD = "cxos9674";
+const String SSID = "wifi";
+const String PSWD = "senha";
 
 
 void scanLocalNetworks();
@@ -10,7 +10,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(1152200);
   scanLocalNetworks();
- ; Serial.println("Iniciando conexão com rede WiFi");
+  Serial.println("Iniciando conexão com rede WiFi");
   WiFi.begin(SSID,PSWD);
   while(WiFi.status() != WL_CONNECTED){
     Serial.print(".");
