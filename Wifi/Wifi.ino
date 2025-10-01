@@ -26,12 +26,12 @@ void connectToWiFi(){
       Serial.print(".");
       delay(200);
     }
-    
+
 }
 
 // void scanLocalNetworks(){
 //   Serial.println("Iniciando Scan de redes Wi-Fi");
-
+ssss
 //   int number = WiFi.scanNetworks();
 //   delay(500);
 
