@@ -16,7 +16,7 @@ void loop() {
   }else{
     Serial.printf("Número de reders encontradas: %d\n", number);
     for(int net = 0; net < number; net++){
-      Serial.print("%d - %s | %d db\n", net, WiFi.SSID(number), WiFi.RSSI(net));
+      Serial.printf("%d - %s | %d db\n", net, WiFi.SSID(number), WiFi.RSSI(net));
     }
   }
 }
