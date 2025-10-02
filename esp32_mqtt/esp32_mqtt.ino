@@ -4,7 +4,7 @@
 const String SSID = "Paulo";
 const String PSWD = "cxos9674";
 
-const String brokerUrl = "test.mosquito.org";
+const String brokerUrl = "test.mosquitto.org";
 const int port = 1883;
 
 WiFiClient espClient;
@@ -16,6 +16,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(1152200);
   connectToWiFi();
+  Serial.println("conectando ao broker...");
   mqttClient.setServer(brokerUrl.c_str(),port);
   String userId = "ESP-teste09";
   mqttClient.connect(userId.c_str());
