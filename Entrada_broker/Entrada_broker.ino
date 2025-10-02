@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const String SSID = "iPhone";
-const String PSWD = "iot_sul_123";
+const String SSID = "iPhone"; // nome da rede wifi
+const String PSWD = "iot_sul_123"; // senha da rede
 
 const String brokerUrl = "test.mosquitto.org";  //URL do broker   (servidor)
 const int port = 1883;                          //Porta do Broker (servidor)
@@ -53,7 +53,7 @@ void connectToBroker(){
   mqttClient.setCallback(callback);
   Serial.println("\nConectado com sucesso!");
 }
-
+// receber mensagem 
 void callback(char* topic, byte* payload, unsigned long length){
   String resposta = "";
   for(int i = 0; i < length; i++){
