@@ -29,18 +29,18 @@ void connectToWiFi(){
 
 }
 
-// void scanLocalNetworks(){
-//   Serial.println("Iniciando Scan de redes Wi-Fi");
-ssss
-//   int number = WiFi.scanNetworks();
-//   delay(500);
+void scanLocalNetworks(){
+  Serial.println("Iniciando Scan de redes Wi-Fi");
 
-//   if(number == -1){
-//     Serial.println("ERRO!. Não deu bom");
-//   }else{
-//     Serial.printf("Número de reders encontradas: %d\n", number);
-//     for(int net = 0; net < number; net++){
-//       Serial.printf("%d - %s | %d db\n", net, WiFi.SSID(net), WiFi.RSSI(net));
-//     }
-//   }
-// }
+  int number = WiFi.scanNetworks();
+  delay(500);
+
+  if(number == -1){
+    Serial.println("ERRO!. Não deu bom");
+  }else{
+    Serial.printf("Número de reders encontradas: %d\n", number);
+    for(int net = 0; net < number; net++){
+      Serial.printf("%d - %s | %d db\n", net, WiFi.SSID(net), WiFi.RSSI(net));
+    }
+  }
+}
