@@ -29,7 +29,8 @@ void loop() {
     Serial.println("conexão MQTT perdida");
     connectbroker();
   }
-  mqttClient.loop();
+  mqttClient.publish("AulaIoTSul/Chat","teste");
+  delay(1000);
 }
 
 void connectToWiFi(){
@@ -39,7 +40,7 @@ void connectToWiFi(){
       Serial.print(".");
       delay(2000);
     }
-    Serial.println("conectado")
+    Serial.println("conectado");
 }
 
 void connectbroker(){
