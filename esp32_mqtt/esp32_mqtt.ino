@@ -11,41 +11,48 @@ WiFiClient espClient;
 PubSubClient mqttClient(espClient);
 
 void connectToWiFi();
+void connectbroker();
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(1152200);
   connectToWiFi();
-  Serial.println("conectando ao broker...");
-  mqttClient.setServer(brokerUrl.c_str(),port);
-  String userId = "ESP-PAULO";
-  userId += String(random(0xffff), HEX);
-  mqttClient.connect(userId.c_str());
-  while(!mqttClient.connected()){
-    Serial.println("Erro de conexão");
-    delay(500);
-  }
-  Serial.println("conectado com sucesso");
+  connectbroker();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   if(WiFi.status() != WL_CONNECTED){
     Serial.println("conexão perdida");
     connectToWiFi();
+  }
+  if(!mqttClient.connected()){
+    Serial.println("conexão MQTT perdida");
+    connectbroker();
   }
   mqttClient.loop();
 }
 
 void connectToWiFi(){
   Serial.println("Iniciando conexão con rede wifi");
-  WiFi.begin(SSID,PSWD);
     while(WiFi.status() != WL_CONNECTED){
-      Serial.printf(".");
-      delay(200);
+      WiFi.begin(SSID,PSWD);
+      Serial.print(".");
+      delay(2000);
     }
+    Serial.println("conectado")
 }
 
-// void broker(){
-
-// }
+void connectbroker(){
+  Serial.println("\n conectando ao broker...");
+  mqttClient.setServer(brokerUrl.c_str(),port);
+// user
+  String userId = "ESP-PAULO";
+  userId += String(random(0xffff), HEX);
+//
+  while(!mqttClient.connected()){
+    mqttClient.connect(userId.c_str());
+    Serial.print(".");
+    delay(2000);
+  }
+  Serial.println("conectado com sucesso");
+}
