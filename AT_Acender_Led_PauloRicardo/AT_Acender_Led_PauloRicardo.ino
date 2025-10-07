@@ -3,7 +3,7 @@
 // 1 - Carrinho/Cheio/1
 // 2 - Carrinho/Cheio/2
 // - - - - - - - - - - -
-// Grupo: Paulo, Bruno e Vinicius Á
+// Grupo: Paulo, Bruno e Vinicius A
 
 #include <WiFi.h>
 #include <PubSubClient.h>
