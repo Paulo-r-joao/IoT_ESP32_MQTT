@@ -1,13 +1,13 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
-const String SSID = "Vini@@";
-const String PSWD = "viniciusA";
+const String SSID = "Paulo";
+const String PSWD = "cxos9674";
 
 const String brokerUrl = "test.mosquitto.org";              //URL do broker (servidor)
 const int port = 1883;                                      //Porta do broker (servidor)
 
-const String LWTTopic = "TDESI1v1/Placa100/status";
-const String LWTTopic_2 = "TDESI1v1/Placa200/status";
+const String LWTTopic = "TDESI1v1/Placa1/status";
+const String LWTTopic_2 = "TDESI1v1/Placa2/status";
 
 const String LWTMessage = "Placa 1 : OFFLINE";
 const int  LWTQoS = 1;
@@ -43,10 +43,10 @@ void setup() {
   tela.setTextColor(SSD1306_WHITE);
   tela.setCursor(0,0);
   tela.println("Hello World!");
-   tela.display();
-   delay(100);
-   tela.clearDisplay();
-   delay(100);
+  tela.display();
+  delay(100);
+  tela.clearDisplay();
+  delay(100);
 }
 
 
@@ -75,7 +75,7 @@ Serial.println("Iniciando conexão com rede WiFi");
   while (WiFi.status() != WL_CONNECTED){
     WiFi.begin(SSID,PSWD);
     Serial.print(".");
-    delay(2000);
+    delay(5000);
   }
   Serial.println("\nConectado!");
 }
@@ -119,16 +119,4 @@ void connectBroker(){
     // ele vai pegar um byte e  e transformar em letra
     resposta += (char) payload[i];
   }
-
-  delay(100);
-  tela.setCursor(0,0);
-  tela.println("Sistema de Manutenção");
-  tela.setCursor(20,10);
-  tela.println(resposta);
-  tela.setCursor(30,5);
-  tela.println(LWTMessage);
-  tela.display();
-  delay(100);
-  tela.clearDisplay();
-
 }
