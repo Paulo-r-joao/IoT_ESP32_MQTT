@@ -407,6 +407,65 @@
         "sessionExpiry": ""
     },
     {
+        "id": "tls_hivemq",
+        "type": "tls-config",
+        "name": "HiveMQ TLS",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "verifyservercert": false
+    },
+    {
+        "id": "48cf8572eb346074",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "mqtt_broker_hivemq",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Cloud",
+        "broker": "31f805d83ca54d5b874fcb52fac74a9b.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "tls_hivemq",
+        "clientid": "NCA_Dashboard",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
         "id": "05eb129b55be2d3d",
         "type": "mqtt in",
         "z": "494e3cc4a01f39ed",
@@ -419,7 +478,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 260,
+        "x": 280,
         "y": 300,
         "wires": [
             [
@@ -1469,7 +1528,7 @@
         "type": "function",
         "z": "8256140b54dd81df",
         "name": "Cores",
-        "func": "let cor = \"white\";\n\nswitch (msg.payload.lotacao) {\n    case \"Livre\": cor = \"green\"; break;\n    case \"Enchendo\": cor = \"yellow\"; break;\n    case \"Meio Cheio\": cor = \"orange\"; break;\n    case \"Quase Cheio\": cor = \"red\"; break;\n    case \"Lotado\": cor = \"#8B0000\"; break;\n}\n\n// payload pra UI com cor\nmsg.payload = `<font color=${cor}>${msg.payload.lotacao}</font>`;\n\n// teste1 serializado com somente o texto da lotação\nmsg.teste1 = JSON.stringify({ status: msg.payload.lotacao });\n\nreturn msg;\n",
+        "func": "let cor = \"white\";\n\nswitch (msg.payload.lotacao) {\n    case \"Livre\": cor = \"green\"; break;\n    case \"Enchendo\": cor = \"yellow\"; break;\n    case \"Meio Cheio\": cor = \"orange\"; break;\n    case \"Quase Cheio\": cor = \"red\"; break;\n    case \"Lotado\": cor = \"#8B0000\"; break;\n}\n// payload pra UI com cor\nmsg.payload = `<font color=${cor}>${msg.payload.lotacao}</font>`;\n\n// teste1 serializado com somente o texto da lotação\nmsg.teste1 = JSON.stringify({ status: msg.payload.lotacao });\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1507,7 +1566,7 @@
         "type": "function",
         "z": "8256140b54dd81df",
         "name": "placa 2",
-        "func": "switch (msg.payload.lotacao) {\n    case \"Livre\":msg.payload = \"Livre\";break;\n    case \"Enchendo\":msg.payload = \"Enchendo\";break;\n    case \"Meio Cheio\":msg.payload = \"Meio Cheio\";break;\n    case \"Quase Cheio\":msg.payload = \"Quase Cheio\";break;\n    case \"Lotado\":msg.payload = \"Lotado\";break;\n}\n\n//msg.payload = JSON.stringify({ \"status\": msg.payload.lotacao });\n\nlet quantidademax = msg.payload,lotacao;\nlet mensagem = '{\"status\": \"' + quantidademax.toString() + '\"}';\nmsg.payload = mensagem;\n\nreturn msg;\n",
+        "func": "let status = msg.payload.lotacao;\nmsg.payload = JSON.stringify({ status: status });\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1922,7 +1981,24 @@
         ]
     },
     {
-        "id": "1d5b4a97beeebee2",
+        "id": "f92b83ccae0ecb53",
+        "type": "debug",
+        "z": "8256140b54dd81df",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "b70e745c9be3f544",
         "type": "global-config",
         "env": [],
         "modules": {
