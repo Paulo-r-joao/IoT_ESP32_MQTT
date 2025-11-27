@@ -1414,7 +1414,8 @@
                 "fb0ba9e1a8416270",
                 "584359230b9c4586",
                 "915c550e83629344",
-                "4007be81fce9df3a"
+                "4007be81fce9df3a",
+                "5ff3a3f89004962c"
             ]
         ]
     },
@@ -1441,7 +1442,7 @@
         "type": "function",
         "z": "842e59269e42feaf",
         "name": "max sala",
-        "func": "let max = Number(msg.payload);\nif (max > 100) max = 100;\nif (max < 0) max = 0;\n\nglobal.set(\"ocup_max\", max);\n\n// força atualização imediata da lotação\nlet atual = global.get(\"ocup_atual\") || 0;\n\nmsg.payload = { ocupacao: `${atual}/${max}` };\n// msg.payload1 = `${atual}/${max}`;\n\n// envia para recalcular status visual\nreturn msg;\n",
+        "func": "// valor do slider\nlet max = Number(msg.payload);\nif (max > 100) max = 100;\nif (max < 0) max = 0;\n\n// salva global\nglobal.set(\"ocup_max\", max);\n\n// pega o atual salvo\nlet atual = global.get(\"ocup_atual\") || 0;\n\n// garante que msg.payload é objeto\nif (typeof msg.payload !== \"object\" || msg.payload === null) {\n    msg.payload = {};\n}\n\n// adiciona valores sem apagar o restante\nmsg.payload.max = max;\nmsg.payload.atual = atual;\nmsg.payload.ocupacao = `${atual}/${max}`;\n\n// envia adiante\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2031,7 +2032,7 @@
         "wires": []
     },
     {
-        "id": "2bea0a79012f04c3",
+        "id": "fb9a5aadcf97d7bd",
         "type": "global-config",
         "env": [],
         "modules": {
