@@ -1,6 +1,6 @@
 [
     {
-        "id": "950654493e3d6d79",
+        "id": "8458830373732862",
         "type": "tab",
         "label": "Flow 2",
         "disabled": false,
@@ -8,7 +8,7 @@
         "env": []
     },
     {
-        "id": "88c0a6b0e8e15974",
+        "id": "842e59269e42feaf",
         "type": "tab",
         "label": "Flow 3",
         "disabled": false,
@@ -330,7 +330,7 @@
         "sessionExpiry": ""
     },
     {
-        "id": "e3024490d8b42ff8",
+        "id": "12b5b88cb5749c59",
         "type": "ui-page",
         "name": "Sistema de Monitoramento ",
         "ui": "f6d8fbae78edba33",
@@ -366,10 +366,10 @@
         "disabled": false
     },
     {
-        "id": "c69c9aeded0adb61",
+        "id": "3565c41dc43218c6",
         "type": "ui-group",
         "name": " Status Placas",
-        "page": "e3024490d8b42ff8",
+        "page": "12b5b88cb5749c59",
         "width": "2",
         "height": 1,
         "order": 2,
@@ -380,10 +380,10 @@
         "groupType": "default"
     },
     {
-        "id": "c27f262e570d645f",
+        "id": "713819fdee1fb12a",
         "type": "ui-group",
         "name": "Status Clima",
-        "page": "e3024490d8b42ff8",
+        "page": "12b5b88cb5749c59",
         "width": 4,
         "height": 1,
         "order": 3,
@@ -394,10 +394,10 @@
         "groupType": "default"
     },
     {
-        "id": "f6b2252d4abe5580",
+        "id": "298bed94673e4a9c",
         "type": "ui-group",
         "name": "Status Sala",
-        "page": "e3024490d8b42ff8",
+        "page": "12b5b88cb5749c59",
         "width": "2",
         "height": "1",
         "order": 1,
@@ -408,10 +408,10 @@
         "groupType": "default"
     },
     {
-        "id": "953f59ad73959a37",
+        "id": "7780fe4cfe90d3ea",
         "type": "ui-group",
         "name": "Definir Ocupação - Sala",
-        "page": "e3024490d8b42ff8",
+        "page": "12b5b88cb5749c59",
         "width": 4,
         "height": 1,
         "order": 4,
@@ -422,10 +422,10 @@
         "groupType": "default"
     },
     {
-        "id": "e25a1290033882f6",
+        "id": "75d5b8cad7e9814e",
         "type": "ui-group",
         "name": "Grafico",
-        "page": "e3024490d8b42ff8",
+        "page": "12b5b88cb5749c59",
         "width": 12,
         "height": 1,
         "order": 5,
@@ -438,7 +438,7 @@
     {
         "id": "ac6880dc5987fdbd",
         "type": "ui-spacer",
-        "group": "c27f262e570d645f",
+        "group": "713819fdee1fb12a",
         "name": "spacer",
         "order": 5,
         "width": 4,
@@ -446,19 +446,9 @@
         "className": ""
     },
     {
-        "id": "ac6893302f54f248",
+        "id": "ac69e3fdaf5879b8",
         "type": "ui-spacer",
-        "group": "953f59ad73959a37",
-        "name": "spacer",
-        "order": 1,
-        "width": 4,
-        "height": 1,
-        "className": ""
-    },
-    {
-        "id": "ac68930879fce66d",
-        "type": "ui-spacer",
-        "group": "953f59ad73959a37",
+        "group": "7780fe4cfe90d3ea",
         "name": "spacer",
         "order": 3,
         "width": 4,
@@ -466,9 +456,19 @@
         "className": ""
     },
     {
-        "id": "d4e11ebb99bcc247",
+        "id": "ac69e3f45c3c9dac",
+        "type": "ui-spacer",
+        "group": "7780fe4cfe90d3ea",
+        "name": "spacer",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "1d98a996a18b5e8a",
         "type": "mqtt in",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "grafico/temp/umi",
         "qos": "1",
@@ -482,20 +482,20 @@
         "y": 300,
         "wires": [
             [
-                "c208a2d8694f7d72",
-                "eb93a9191451a1df",
-                "03f0908b096725bd",
-                "7847e84dcfdc40f2",
-                "ac8b40bfde6b5345",
-                "555e06674b9f6d63"
+                "b6a239598063a634",
+                "a6ac9839f9df832a",
+                "790c0dcb847fe068",
+                "27068317e076dd4e",
+                "771b557c5fe148f4",
+                "8e8afe2d2995aa44"
             ]
         ]
     },
     {
-        "id": "1da5b5334d3ec9c4",
+        "id": "93c09e5ecf45d960",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "c27f262e570d645f",
+        "z": "8458830373732862",
+        "group": "713819fdee1fb12a",
         "order": 1,
         "width": 2,
         "height": 0,
@@ -516,10 +516,10 @@
         "wires": []
     },
     {
-        "id": "48ff1b29f714ed95",
+        "id": "470eb4d2407555aa",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "c27f262e570d645f",
+        "z": "8458830373732862",
+        "group": "713819fdee1fb12a",
         "order": 2,
         "width": 2,
         "height": 0,
@@ -540,9 +540,9 @@
         "wires": []
     },
     {
-        "id": "eb93a9191451a1df",
+        "id": "a6ac9839f9df832a",
         "type": "function",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "function - adicionar °C",
         "func": "let temp = msg.payload.temp;\nlet mensagem = temp + \"°C\";\n\nmsg.payload.tempe = mensagem;\nreturn msg;",
         "outputs": 1,
@@ -555,16 +555,16 @@
         "y": 220,
         "wires": [
             [
-                "1da5b5334d3ec9c4"
+                "93c09e5ecf45d960"
             ]
         ]
     },
     {
-        "id": "03f0908b096725bd",
+        "id": "790c0dcb847fe068",
         "type": "ui-gauge",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "gauge - temperatura",
-        "group": "c27f262e570d645f",
+        "group": "713819fdee1fb12a",
         "order": 3,
         "value": "payload.temp",
         "valueType": "msg",
@@ -614,11 +614,11 @@
         ]
     },
     {
-        "id": "c208a2d8694f7d72",
+        "id": "b6a239598063a634",
         "type": "ui-gauge",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "gauge - umi",
-        "group": "c27f262e570d645f",
+        "group": "713819fdee1fb12a",
         "order": 4,
         "value": "payload.humi",
         "valueType": "msg",
@@ -674,9 +674,9 @@
         ]
     },
     {
-        "id": "7847e84dcfdc40f2",
+        "id": "27068317e076dd4e",
         "type": "function",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "function - adicionar %",
         "func": "let umi = msg.payload.humi;\nlet mensagem = umi + \"%\";\n\nmsg.payload.umi = mensagem;\n\nreturn msg;",
         "outputs": 1,
@@ -689,15 +689,15 @@
         "y": 360,
         "wires": [
             [
-                "48ff1b29f714ed95"
+                "470eb4d2407555aa"
             ]
         ]
     },
     {
-        "id": "fba61f85b8395aed",
+        "id": "8a999c044c14b35a",
         "type": "ui-chart",
-        "z": "950654493e3d6d79",
-        "group": "e25a1290033882f6",
+        "z": "8458830373732862",
+        "group": "75d5b8cad7e9814e",
         "name": "",
         "label": "Histórico de Temperatura",
         "order": 1,
@@ -756,9 +756,9 @@
         ]
     },
     {
-        "id": "ac8b40bfde6b5345",
+        "id": "771b557c5fe148f4",
         "type": "function",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "temp - grafico",
         "func": "let temp = msg.payload.temp || 0;\nlet t = Date.now();\n\nreturn { \n    topic: \"temperatura\", \n    payload: { x: t, y: temp } \n};",
         "outputs": 1,
@@ -771,14 +771,14 @@
         "y": 180,
         "wires": [
             [
-                "ab0a2341a14b4efa"
+                "f2a7cb0b01e1f0ee"
             ]
         ]
     },
     {
-        "id": "ab0a2341a14b4efa",
+        "id": "f2a7cb0b01e1f0ee",
         "type": "delay",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "pauseType": "queue",
         "timeout": "5",
@@ -796,14 +796,14 @@
         "y": 180,
         "wires": [
             [
-                "fba61f85b8395aed"
+                "8a999c044c14b35a"
             ]
         ]
     },
     {
-        "id": "555e06674b9f6d63",
+        "id": "8e8afe2d2995aa44",
         "type": "function",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "umi - grafico",
         "func": "let umi = msg.payload.humi || 0;\nlet t = Date.now();\n\nreturn { \n    topic: \"umidade\", \n    payload: { x: t, y: umi } \n};",
         "outputs": 1,
@@ -816,15 +816,15 @@
         "y": 400,
         "wires": [
             [
-                "8039747037aa127a"
+                "9e0bbb3b59773b2f"
             ]
         ]
     },
     {
-        "id": "c230c974605a71b0",
+        "id": "b554495249292710",
         "type": "ui-chart",
-        "z": "950654493e3d6d79",
-        "group": "e25a1290033882f6",
+        "z": "8458830373732862",
+        "group": "75d5b8cad7e9814e",
         "name": "",
         "label": "Histórico de Umidade",
         "order": 2,
@@ -883,9 +883,9 @@
         ]
     },
     {
-        "id": "8039747037aa127a",
+        "id": "9e0bbb3b59773b2f",
         "type": "delay",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "pauseType": "queue",
         "timeout": "5",
@@ -903,14 +903,14 @@
         "y": 400,
         "wires": [
             [
-                "c230c974605a71b0"
+                "b554495249292710"
             ]
         ]
     },
     {
-        "id": "a62753bf64818dd7",
+        "id": "d6e78115d8b8fce1",
         "type": "function",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "ocup - grafico",
         "func": "let ocup = global.get(\"ocup_atual\") || 0;\n\n// timestamp\nlet t = Date.now();\n\nreturn { topic:\"ocupacao\",   payload:{ x:t, y:ocup } }\n\n",
         "outputs": 1,
@@ -923,14 +923,14 @@
         "y": 480,
         "wires": [
             [
-                "3cce28e5915b185f"
+                "c8981b894a82b322"
             ]
         ]
     },
     {
-        "id": "498887267c994c78",
+        "id": "59b6e6ad1c26d3ed",
         "type": "mqtt in",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "ocupacao/grafico",
         "qos": "2",
@@ -944,15 +944,15 @@
         "y": 480,
         "wires": [
             [
-                "a62753bf64818dd7"
+                "d6e78115d8b8fce1"
             ]
         ]
     },
     {
-        "id": "465d65e7e33dd946",
+        "id": "8fc37c3dd4accd27",
         "type": "ui-chart",
-        "z": "950654493e3d6d79",
-        "group": "e25a1290033882f6",
+        "z": "8458830373732862",
+        "group": "75d5b8cad7e9814e",
         "name": "Histórico de Ocupação",
         "label": "Histórico de Ocupação",
         "order": 3,
@@ -1011,9 +1011,9 @@
         ]
     },
     {
-        "id": "3cce28e5915b185f",
+        "id": "c8981b894a82b322",
         "type": "delay",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "pauseType": "rate",
         "timeout": "5",
@@ -1031,15 +1031,15 @@
         "y": 480,
         "wires": [
             [
-                "465d65e7e33dd946"
+                "8fc37c3dd4accd27"
             ]
         ]
     },
     {
-        "id": "a872b71ab17e3d6c",
+        "id": "829ca786159dbedd",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "f6b2252d4abe5580",
+        "z": "8458830373732862",
+        "group": "298bed94673e4a9c",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -1060,9 +1060,9 @@
         "wires": []
     },
     {
-        "id": "52f7fe8160449c4e",
+        "id": "d623ad9432caca7f",
         "type": "debug",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "debug - Valores Sensor",
         "active": false,
         "tosidebar": true,
@@ -1077,11 +1077,11 @@
         "wires": []
     },
     {
-        "id": "91cab219e52d5b51",
+        "id": "31174d529be89647",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "f6b2252d4abe5580",
-        "order": 3,
+        "z": "8458830373732862",
+        "group": "298bed94673e4a9c",
+        "order": 4,
         "width": 0,
         "height": 0,
         "name": "",
@@ -1101,11 +1101,11 @@
         "wires": []
     },
     {
-        "id": "98162d773a8619dd",
+        "id": "d1519621c49a9fec",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "f6b2252d4abe5580",
-        "order": 4,
+        "z": "8458830373732862",
+        "group": "298bed94673e4a9c",
+        "order": 3,
         "width": 0,
         "height": 0,
         "name": "",
@@ -1125,9 +1125,9 @@
         "wires": []
     },
     {
-        "id": "e5bb4d0c5f0ebd5a",
+        "id": "2bad6802a3b68eb3",
         "type": "mqtt in",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "ocupacao",
         "qos": "2",
@@ -1141,16 +1141,16 @@
         "y": 720,
         "wires": [
             [
-                "98162d773a8619dd",
-                "b76042975fec5213"
+                "d1519621c49a9fec",
+                "a30182d4fcd959aa"
             ]
         ]
     },
     {
-        "id": "0eca54a36fc57e7d",
+        "id": "df03a874e3e883fc",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "f6b2252d4abe5580",
+        "z": "8458830373732862",
+        "group": "298bed94673e4a9c",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -1171,9 +1171,9 @@
         "wires": []
     },
     {
-        "id": "13c052ddeea8936f",
+        "id": "9f5bb4b6684f4153",
         "type": "mqtt in",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "statusagora",
         "qos": "2",
@@ -1187,15 +1187,15 @@
         "y": 780,
         "wires": [
             [
-                "0eca54a36fc57e7d"
+                "df03a874e3e883fc"
             ]
         ]
     },
     {
-        "id": "7bd23ce193a683ea",
+        "id": "74ac70cc4a26ab69",
         "type": "ui-slider",
-        "z": "950654493e3d6d79",
-        "group": "953f59ad73959a37",
+        "z": "8458830373732862",
+        "group": "7780fe4cfe90d3ea",
         "name": "Definir ocupação",
         "label": "",
         "tooltip": "",
@@ -1222,14 +1222,14 @@
         "y": 720,
         "wires": [
             [
-                "a3ca6b2b90ec121d"
+                "6f2a7c065e2a9df4"
             ]
         ]
     },
     {
-        "id": "a3ca6b2b90ec121d",
+        "id": "6f2a7c065e2a9df4",
         "type": "mqtt out",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "definir_ocupacao",
         "qos": "1",
@@ -1245,10 +1245,10 @@
         "wires": []
     },
     {
-        "id": "5b1703f23f0e4ae0",
+        "id": "672028fa362551dd",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "c69c9aeded0adb61",
+        "z": "8458830373732862",
+        "group": "3565c41dc43218c6",
         "order": 2,
         "width": 0,
         "height": 2,
@@ -1269,10 +1269,10 @@
         "wires": []
     },
     {
-        "id": "59562f2f35f0cdca",
+        "id": "ec8781d7b516d7f1",
         "type": "ui-text",
-        "z": "950654493e3d6d79",
-        "group": "c69c9aeded0adb61",
+        "z": "8458830373732862",
+        "group": "3565c41dc43218c6",
         "order": 1,
         "width": 0,
         "height": 2,
@@ -1293,9 +1293,9 @@
         "wires": []
     },
     {
-        "id": "e2fd7fbf86e18c63",
+        "id": "8009e95d7709f881",
         "type": "mqtt in",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "status_placa2",
         "qos": "1",
@@ -1309,14 +1309,14 @@
         "y": 100,
         "wires": [
             [
-                "5b1703f23f0e4ae0"
+                "672028fa362551dd"
             ]
         ]
     },
     {
-        "id": "cef322d14704df47",
+        "id": "eb3f93407d51437b",
         "type": "mqtt in",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "status_placa1",
         "qos": "1",
@@ -1330,14 +1330,14 @@
         "y": 40,
         "wires": [
             [
-                "59562f2f35f0cdca"
+                "ec8781d7b516d7f1"
             ]
         ]
     },
     {
-        "id": "34a40f20ada2b787",
+        "id": "60b447714cf5356d",
         "type": "mqtt in",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "",
         "topic": "sensor/hora",
         "qos": "1",
@@ -1351,16 +1351,16 @@
         "y": 600,
         "wires": [
             [
-                "a872b71ab17e3d6c",
-                "91cab219e52d5b51",
-                "52f7fe8160449c4e"
+                "829ca786159dbedd",
+                "31174d529be89647",
+                "d623ad9432caca7f"
             ]
         ]
     },
     {
-        "id": "b76042975fec5213",
+        "id": "a30182d4fcd959aa",
         "type": "debug",
-        "z": "950654493e3d6d79",
+        "z": "8458830373732862",
         "name": "debug 3",
         "active": true,
         "tosidebar": true,
@@ -1374,9 +1374,9 @@
         "wires": []
     },
     {
-        "id": "2fd4855103a9134d",
+        "id": "441194236141b320",
         "type": "mqtt in",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "vini/topic/placa1/envia",
         "qos": "1",
@@ -1390,15 +1390,15 @@
         "y": 520,
         "wires": [
             [
-                "654d07dcbf1eb117",
-                "341862b5ec42344c"
+                "c85d331083921a5a",
+                "b8e9eb835ac69a0e"
             ]
         ]
     },
     {
-        "id": "654d07dcbf1eb117",
+        "id": "c85d331083921a5a",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "ocupação",
         "func": "let atual = global.get(\"ocup_atual\") || 0;\nlet max   = global.get(\"ocup_max\")  || 0;\n\n// evento\nif (msg.payload.evento === \"Entrando\") {\n    atual++;\n}\nelse if (msg.payload.evento === \"Saindo\") {\n    atual--;\n}\nelse {\n    msg.payload.evento = \"Neutro\";\n}\n\n// impede que atual fique menor que 0\nif (atual < 0) {\n    atual = 0;\n}\n\n// salva global\nglobal.set(\"ocup_atual\", atual);\n\n// envia msg de atualização\nmsg.payload = {\n    atual: atual,\n    max: max,\n    ocupacao: `${atual}/${max}`,\n    evento: msg.payload.evento\n};\n\n// envia para o dashboard atualizar\nreturn msg;\n",
         "outputs": 1,
@@ -1411,17 +1411,17 @@
         "y": 520,
         "wires": [
             [
-                "4a7ff93a16de2313",
-                "197d29462526e598",
-                "e0286198ff1fc96e",
-                "9420a452607ec30d"
+                "fb0ba9e1a8416270",
+                "584359230b9c4586",
+                "915c550e83629344",
+                "4007be81fce9df3a"
             ]
         ]
     },
     {
-        "id": "4a7ff93a16de2313",
+        "id": "fb0ba9e1a8416270",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "bruno/topic/placa2/recebe/ocupacao",
         "qos": "1",
@@ -1437,9 +1437,9 @@
         "wires": []
     },
     {
-        "id": "a69a8b22798cbee9",
+        "id": "3781232ab2d0b67e",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "max sala",
         "func": "let max = Number(msg.payload);\nif (max > 100) max = 100;\nif (max < 0) max = 0;\n\nglobal.set(\"ocup_max\", max);\n\n// força atualização imediata da lotação\nlet atual = global.get(\"ocup_atual\") || 0;\n\nmsg.payload = { ocupacao: `${atual}/${max}` };\n// msg.payload1 = `${atual}/${max}`;\n\n// envia para recalcular status visual\nreturn msg;\n",
         "outputs": 1,
@@ -1452,17 +1452,17 @@
         "y": 580,
         "wires": [
             [
-                "4a7ff93a16de2313",
-                "197d29462526e598",
-                "c0831712ef7f4823",
-                "77fc25fbcbc6760e"
+                "fb0ba9e1a8416270",
+                "584359230b9c4586",
+                "433222ec5a854b8e",
+                "5ff3a3f89004962c"
             ]
         ]
     },
     {
-        "id": "197d29462526e598",
+        "id": "584359230b9c4586",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "msg lotação",
         "func": "let atual = global.get(\"ocup_atual\") || 0;\nlet max   = global.get(\"ocup_max\") || 0;\n\nif(max <= 0){\n    msg.payload = msg.payload || {};\n    msg.payload.lotacao = \"desconhecido\";\n    return msg;\n}\n\nlet perc = (atual / max) * 100;\n\nif(perc <= 29){\n    msg.payload.lotacao = \"Livre\";\n}\nelse if(perc >= 30 && perc <= 59){\n    msg.payload.lotacao = \"Enchendo\";\n}\nelse if(perc >= 60 && perc <= 74){\n    msg.payload.lotacao = \"Meio Cheio\";\n}\nelse if(perc >= 75 && perc <= 99){\n    msg.payload.lotacao = \"Quase Cheio\";\n}\nelse {\n    msg.payload.lotacao = \"Lotado\";\n}\n\nreturn msg;\n",
         "outputs": 1,
@@ -1475,14 +1475,14 @@
         "y": 580,
         "wires": [
             [
-                "f61ed05784c0f0ef"
+                "538374da6cfb5cf4"
             ]
         ]
     },
     {
-        "id": "f61ed05784c0f0ef",
+        "id": "538374da6cfb5cf4",
         "type": "switch",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "Lotação",
         "property": "payload.lotacao",
         "propertyType": "msg",
@@ -1520,31 +1520,31 @@
         "y": 580,
         "wires": [
             [
-                "e0679e86b8682a3c",
-                "2dce37b2f5b0f3d4"
+                "d1ea980e406cb08f",
+                "f5e7bb33ab53c18a"
             ],
             [
-                "e0679e86b8682a3c",
-                "2dce37b2f5b0f3d4"
+                "d1ea980e406cb08f",
+                "f5e7bb33ab53c18a"
             ],
             [
-                "e0679e86b8682a3c",
-                "2dce37b2f5b0f3d4"
+                "d1ea980e406cb08f",
+                "f5e7bb33ab53c18a"
             ],
             [
-                "e0679e86b8682a3c",
-                "2dce37b2f5b0f3d4"
+                "d1ea980e406cb08f",
+                "f5e7bb33ab53c18a"
             ],
             [
-                "e0679e86b8682a3c",
-                "2dce37b2f5b0f3d4"
+                "d1ea980e406cb08f",
+                "f5e7bb33ab53c18a"
             ]
         ]
     },
     {
-        "id": "e0679e86b8682a3c",
+        "id": "d1ea980e406cb08f",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "Cores",
         "func": "let cor = \"white\";\n\nswitch (msg.payload.lotacao) {\n    case \"Livre\": cor = \"green\"; break;\n    case \"Enchendo\": cor = \"#E6B800\"; break;\n    case \"Meio Cheio\": cor = \"orange\"; break;\n    case \"Quase Cheio\": cor = \"red\"; break;\n    case \"Lotado\": cor = \"#8B0000\"; break;\n}\n// payload pra UI com cor\nmsg.payload = `<font color=${cor}>${msg.payload.lotacao}</font>`;\n\n// teste1 serializado com somente o texto da lotação\nmsg.teste1 = JSON.stringify({ status: msg.payload.lotacao });\nreturn msg;\n",
         "outputs": 1,
@@ -1557,15 +1557,15 @@
         "y": 560,
         "wires": [
             [
-                "11ab1019fe6f97c0",
-                "e65f954e777e8553"
+                "f8cae85b06eab52d",
+                "61038789b564dfec"
             ]
         ]
     },
     {
-        "id": "11ab1019fe6f97c0",
+        "id": "f8cae85b06eab52d",
         "type": "debug",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "debug - Status Ocupação",
         "active": false,
         "tosidebar": true,
@@ -1580,9 +1580,9 @@
         "wires": []
     },
     {
-        "id": "2dce37b2f5b0f3d4",
+        "id": "f5e7bb33ab53c18a",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "placa 2",
         "func": "let status = msg.payload.lotacao;\nmsg.payload = JSON.stringify({ status: status });\n\nreturn msg;\n",
         "outputs": 1,
@@ -1595,14 +1595,14 @@
         "y": 600,
         "wires": [
             [
-                "10a316f68bb70e71"
+                "36bd15768829a969"
             ]
         ]
     },
     {
-        "id": "0a8b025ac455b0a3",
+        "id": "62b4138ce0710cb7",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "bruno/topic/placa2/recebe/status",
         "qos": "1",
@@ -1618,9 +1618,9 @@
         "wires": []
     },
     {
-        "id": "10a316f68bb70e71",
+        "id": "36bd15768829a969",
         "type": "delay",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "pauseType": "rate",
         "timeout": "2",
@@ -1638,14 +1638,14 @@
         "y": 620,
         "wires": [
             [
-                "0a8b025ac455b0a3"
+                "62b4138ce0710cb7"
             ]
         ]
     },
     {
-        "id": "e0286198ff1fc96e",
+        "id": "915c550e83629344",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "ocupacao/grafico",
         "qos": "1",
@@ -1661,9 +1661,9 @@
         "wires": []
     },
     {
-        "id": "77fc25fbcbc6760e",
+        "id": "5ff3a3f89004962c",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "ocupacao",
         "qos": "1",
@@ -1679,9 +1679,9 @@
         "wires": []
     },
     {
-        "id": "e65f954e777e8553",
+        "id": "61038789b564dfec",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "statusagora",
         "qos": "1",
@@ -1697,9 +1697,9 @@
         "wires": []
     },
     {
-        "id": "fdba485c1a9cf42a",
+        "id": "4220f3dee32a4208",
         "type": "mqtt in",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "definir_ocupacao",
         "qos": "1",
@@ -1713,14 +1713,14 @@
         "y": 580,
         "wires": [
             [
-                "a69a8b22798cbee9"
+                "3781232ab2d0b67e"
             ]
         ]
     },
     {
-        "id": "ad281827b4ca3832",
+        "id": "528b07a58dbe3c27",
         "type": "mqtt in",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "placas/on/off/vini",
         "qos": "1",
@@ -1734,14 +1734,14 @@
         "y": 200,
         "wires": [
             [
-                "726e9e3d1927cc56"
+                "780aa33f2396a663"
             ]
         ]
     },
     {
-        "id": "341542e11658d2d3",
+        "id": "ccb6db14142b7275",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "Status: Online",
         "func": "msg.payload = `<font color=green>${msg.payload.status}</font>`\nreturn msg;",
         "outputs": 1,
@@ -1754,14 +1754,14 @@
         "y": 160,
         "wires": [
             [
-                "1de61fc989a18be5"
+                "d6b0a0f60349ed76"
             ]
         ]
     },
     {
-        "id": "726e9e3d1927cc56",
+        "id": "780aa33f2396a663",
         "type": "switch",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "property": "payload.status",
         "propertyType": "msg",
@@ -1784,17 +1784,17 @@
         "y": 200,
         "wires": [
             [
-                "341542e11658d2d3"
+                "ccb6db14142b7275"
             ],
             [
-                "3330a154535f3cce"
+                "b5e2cf7bb5db4713"
             ]
         ]
     },
     {
-        "id": "3330a154535f3cce",
+        "id": "b5e2cf7bb5db4713",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "Status: Offline",
         "func": "msg.payload = `<font color=red>${msg.payload.status}</font>`\nreturn msg;",
         "outputs": 1,
@@ -1807,14 +1807,14 @@
         "y": 240,
         "wires": [
             [
-                "1de61fc989a18be5"
+                "d6b0a0f60349ed76"
             ]
         ]
     },
     {
-        "id": "c79097ecf3ac9eb9",
+        "id": "2722dcda3eb2f988",
         "type": "mqtt in",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "placas/on/off/bruno",
         "qos": "1",
@@ -1828,14 +1828,14 @@
         "y": 340,
         "wires": [
             [
-                "3b8cd9b815e047d8"
+                "2accb10fbe6afe64"
             ]
         ]
     },
     {
-        "id": "28f5eedf39637a68",
+        "id": "796e30f50c3ac679",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "Status: Online",
         "func": "msg.payload = `<font color=green>${msg.payload.status}</font>`\nreturn msg;",
         "outputs": 1,
@@ -1848,14 +1848,14 @@
         "y": 300,
         "wires": [
             [
-                "50d7664c84273882"
+                "6a31a384bbdc18ec"
             ]
         ]
     },
     {
-        "id": "3b8cd9b815e047d8",
+        "id": "2accb10fbe6afe64",
         "type": "switch",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "property": "payload.status",
         "propertyType": "msg",
@@ -1878,17 +1878,17 @@
         "y": 340,
         "wires": [
             [
-                "28f5eedf39637a68"
+                "796e30f50c3ac679"
             ],
             [
-                "d54fb314c6c1b6ae"
+                "f3e4c4add26c7952"
             ]
         ]
     },
     {
-        "id": "d54fb314c6c1b6ae",
+        "id": "f3e4c4add26c7952",
         "type": "function",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "Status: Offline",
         "func": "msg.payload = `<font color=red>${msg.payload.status}</font>`\nreturn msg;",
         "outputs": 1,
@@ -1901,14 +1901,14 @@
         "y": 380,
         "wires": [
             [
-                "50d7664c84273882"
+                "6a31a384bbdc18ec"
             ]
         ]
     },
     {
-        "id": "50d7664c84273882",
+        "id": "6a31a384bbdc18ec",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "status_placa2",
         "qos": "1",
@@ -1924,9 +1924,9 @@
         "wires": []
     },
     {
-        "id": "1de61fc989a18be5",
+        "id": "d6b0a0f60349ed76",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "status_placa1",
         "qos": "1",
@@ -1942,9 +1942,9 @@
         "wires": []
     },
     {
-        "id": "341862b5ec42344c",
+        "id": "b8e9eb835ac69a0e",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "sensor/hora",
         "qos": "1",
@@ -1960,9 +1960,9 @@
         "wires": []
     },
     {
-        "id": "734a7a959e006191",
+        "id": "580199fd0f86f9a7",
         "type": "mqtt out",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "grafico/temp/umi",
         "qos": "1",
@@ -1978,9 +1978,9 @@
         "wires": []
     },
     {
-        "id": "e491519768ef4b69",
+        "id": "d6315488ff6a7f2c",
         "type": "mqtt in",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "",
         "topic": "bruno/topic/placa2/envia",
         "qos": "1",
@@ -1994,14 +1994,14 @@
         "y": 720,
         "wires": [
             [
-                "734a7a959e006191"
+                "580199fd0f86f9a7"
             ]
         ]
     },
     {
-        "id": "9420a452607ec30d",
+        "id": "4007be81fce9df3a",
         "type": "debug",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
@@ -2015,9 +2015,9 @@
         "wires": []
     },
     {
-        "id": "c0831712ef7f4823",
+        "id": "433222ec5a854b8e",
         "type": "debug",
-        "z": "88c0a6b0e8e15974",
+        "z": "842e59269e42feaf",
         "name": "debug 2",
         "active": true,
         "tosidebar": true,
@@ -2031,7 +2031,7 @@
         "wires": []
     },
     {
-        "id": "2be756140911376e",
+        "id": "35c21811c8ce66f0",
         "type": "global-config",
         "env": [],
         "modules": {
