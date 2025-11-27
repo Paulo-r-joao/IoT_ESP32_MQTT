@@ -1081,7 +1081,7 @@
         "type": "ui-text",
         "z": "8458830373732862",
         "group": "298bed94673e4a9c",
-        "order": 4,
+        "order": 3,
         "width": 0,
         "height": 0,
         "name": "",
@@ -1105,7 +1105,7 @@
         "type": "ui-text",
         "z": "8458830373732862",
         "group": "298bed94673e4a9c",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "name": "",
@@ -2031,7 +2031,7 @@
         "wires": []
     },
     {
-        "id": "35c21811c8ce66f0",
+        "id": "2bea0a79012f04c3",
         "type": "global-config",
         "env": [],
         "modules": {
